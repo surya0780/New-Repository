@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premium Inventory Dashboard</title>
+
+<title>Inventory Dashboard</title>
+
 <link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
 <div class="topbar">
+
   <div class="logo-section">
-    <div class="logo-box">📦</div>
+
+    <div class="logo-box">
+      📦
+    </div>
+
     <div>
       <h1>Inventory Dashboard</h1>
-      <p>Live Inventory Monitoring System</p>
     </div>
+
   </div>
 
-  <div class="top-actions">
-    <button class="good-btn" onclick="filterStock('good')">GOOD STOCK</button>
-    <button class="bad-btn" onclick="filterStock('bad')">LOW STOCK</button>
-    <button class="reset-btn" onclick="loadData()">RESET</button>
-  </div>
 </div>
+
+
 
 <div class="stats-grid">
+
   <div class="stat-card blue">
+
     <h2 id="totalProducts">0</h2>
+
     <p>Total Products</p>
+
   </div>
 
-  <div class="stat-card green">
-    <h2 id="goodCount">0</h2>
-    <p>Good Stock</p>
-  </div>
-
-  <div class="stat-card red">
-    <h2 id="badCount">0</h2>
-    <p>Low Stock</p>
-  </div>
 </div>
+
+
 
 <div class="main-card">
 
 <div class="filter-grid">
-  <div>
-    <label>Vendor</label>
-    <select id="vendorFilter">
-      <option value="">All Vendors</option>
-    </select>
-  </div>
 
   <div>
+
     <label>Search Product</label>
-    <input type="text" id="search" placeholder="Search Product / UPC / Item ID">
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Search Product / UPC / Item ID">
+
   </div>
+
 </div>
 
+
+
 <div class="table-wrapper">
+
 <table>
+
 <thead>
+
 <tr>
+
 <th>S No</th>
 <th>Image</th>
 <th>Item ID</th>
@@ -71,11 +83,15 @@
 <th>MRP</th>
 <th>QTY</th>
 <th>Status</th>
+
 </tr>
+
 </thead>
 
 <tbody id="tableBody"></tbody>
+
 </table>
+
 </div>
 
 </div>
