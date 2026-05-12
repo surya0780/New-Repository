@@ -1,6 +1,6 @@
 let inventoryData = [];
 
-const API_URL = "https://docs.google.com/spreadsheets/d/1st7T2kHXPI0PpZvNpekadupNdkLrgliDgNO4LDn3HTc/edit?gid=0#gid=0";
+const API_URL = "https://script.google.com/macros/s/AKfycbw5nVn2wkXgzMM0tb04z4j46Mc5ct0Gg0o77lr_1saiwyMNFnZW5tOy4-vhhesBEtjSJg/exec";
 
 async function loadData(){
 
